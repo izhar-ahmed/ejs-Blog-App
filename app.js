@@ -49,7 +49,7 @@ app.post("/compose", (req, res) =>{
 
 app.get("/posts/:postName", function(req, res){
   let requestTitle = req.params.postName;
-  
+   
   posts.forEach(function(post){
     let storedTitle = post.title;
     let storedContent = post.content;
